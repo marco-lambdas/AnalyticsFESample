@@ -11,9 +11,7 @@ phases:
     commands:
       - git branch
       - git checkout feature/test-branch
-      - git log
-      - git checkout develop
-      - git log
+      - git merge develop
   #     - npm install
   # build:
   #   commands:
