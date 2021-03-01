@@ -10,9 +10,9 @@ phases:
   pre_build:
     commands:
       - git branch
-      - git checkout develop
+      - git checkout feature/test-branch
       - git log
-      - npm install
-  build:
-    commands:
-      - npm run build
+  #     - npm install
+  # build:
+  #   commands:
+  #     - npm run build
