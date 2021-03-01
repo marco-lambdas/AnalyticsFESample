@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo $APP_NAME
+      - echo $REACT_APP_ENV
+      - echo $S3_BUCKET
+      - echo $DISTRIBUTION_ID
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run build
