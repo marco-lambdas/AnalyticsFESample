@@ -10,7 +10,8 @@ phases:
   pre_build:
     commands:
       - git branch -r
-      - git checkout --track origin/feature/test-branch
+      - git branch
+      - git checkout feature/test-branch
       - npm install
   build:
     commands:
