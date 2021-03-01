@@ -9,6 +9,7 @@ phases:
       - echo $DISTRIBUTION_ID
   pre_build:
     commands:
+      - git status
       - npm install
   build:
     commands:
