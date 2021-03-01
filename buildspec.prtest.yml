@@ -9,6 +9,7 @@ phases:
       - echo $DISTRIBUTION_ID
   pre_build:
     commands:
+      - ls
       - git branch
       - git checkout feature/test-branch
       - git merge develop
