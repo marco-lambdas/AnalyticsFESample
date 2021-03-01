@@ -9,9 +9,9 @@ phases:
       - echo $DISTRIBUTION_ID
   pre_build:
     commands:
-      - git branch -r
       - git branch
       - git checkout feature/test-branch
+      - git merger develop
       - npm install
   build:
     commands:
